@@ -1,32 +1,31 @@
 # 🗳️ Online Voting System
 
-A secure and efficient web-based voting system built with a full-stack architecture. It supports voter authentication, real-time vote casting, and result viewing. The project is structured into separate **client** and **server** folders, and follows industry practices like JWT authentication, bcrypt hashing, and environment variable protection.
+An end-to-end full-stack web application that enables secure, real-time online voting. Built with modern development practices, it separates frontend and backend concerns, and ensures secure authentication, clean structure, and configurable environment variables via `.env`.
 
 ---
 
-## 🌟 Features
+## 🚀 Features
 
-### 🧑‍💻 Client (Frontend)
-- Responsive and interactive voting interface
-- User login and authentication
-- Real-time voting feedback
-- Result visualization (optional)
-- Developed using HTML, CSS, JavaScript (or React)
+### 👨‍💻 Client (Frontend)
+- Responsive voting UI (HTML/CSS/JS or React)
+- Login & authentication interface
+- Vote casting dashboard
+- Real-time status updates
+- Error & alert handling on screen
 
 ### 🖥️ Server (Backend)
-- RESTful API built with Node.js and Express.js
-- MongoDB for user and vote data storage
-- Secure endpoints with JWT authentication
-- Password hashing with Bcrypt
-- Modular folder structure for controllers, routes, models
+- REST API using Node.js & Express.js
+- MongoDB with Mongoose for DB management
+- User management: register/login
+- JWT-based secure authentication
+- Modular structure (routes/controllers/models)
 
-### 🔐 Environment (.env) Configuration
-- `.env` file stores sensitive configurations:
-  - `PORT`: Port on which backend runs
-  - `MONGO_URI`: MongoDB connection URI
-  - `JWT_SECRET`: Secret key for JSON Web Tokens
+### 🔐 Environment Setup (`.env`)
+- Keeps sensitive info private
+- Configure easily in `server/.env`
 
----
-
-## 📁 Folder Structure
-
+Example `.env`:
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
